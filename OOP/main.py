@@ -1,7 +1,10 @@
 from OOP.Enemy import *
 
-enemy = Enemy()
-enemy.type_of_enemy = 'Zombie'
+zombie = Enemy()
+zombie.type_of_enemy = 'Zombie'
+zombie.talk()
+zombie.walk_forward()
+zombie.attack()
 
-print(f'{enemy.type_of_enemy} has {enemy.health_points} health Points '
-      f'and can do attack of {enemy.attack_damage}')
+print(f'{zombie.type_of_enemy} has {zombie.health_points} health Points '
+      f'and can do attack of {zombie.attack_damage}')
